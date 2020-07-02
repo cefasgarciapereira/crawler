@@ -9,12 +9,18 @@ import scrapy
 
 
 class AgencialupacrawlerItem(scrapy.Item):
+    link = scrapy.Field()
+    pass
+
+class LupaNewsItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    id = scrapy.Field()
     title = scrapy.Field()
     author = scrapy.Field()
     date = scrapy.Field()
-    abstract = scrapy.Field()
-    link = scrapy.Field()
     time = scrapy.Field()
+    link = scrapy.Field()
+    body = scrapy.Field()
+    label = scrapy.Field()
     pass
